@@ -1,0 +1,22 @@
+*{
+    
+    color: blueviolet
+}
+
+
+.highlight{
+    font-size: 1.2rem ;
+    color: rgb(106, 255, 0);
+}
+
+.center{
+    text-align: center;
+}
+
+h1.center {
+    background-color: rgb(42, 165, 77);
+}
+
+.span1{
+    color: beige;
+}
