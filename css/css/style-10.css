@@ -1,0 +1,27 @@
+/* Genel olarak tum linklerin  stillerini degistimrek icin kullanilir. */
+a{
+    color:green;
+    
+}
+
+a:link{
+    color: chocolate;
+}
+
+/*ziyaret edilmis site*/
+a:visited{
+
+    color: blueviolet;
+}
+
+a:hover{
+    background-color: aquamarine;
+}
+
+.title:hover{
+    color:red;
+    cursor:crosshair;
+}
+
+
+
