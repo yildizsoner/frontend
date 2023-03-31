@@ -1,0 +1,47 @@
+body{
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu> div{
+    border: 10px solid red;
+    padding: 2rem;
+    width: 25%;
+   
+   
+}
+
+.menu>div div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu>div span {
+    font-size: 2rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.menu>div a{
+    background-color:black;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+section.menu div span:hover,section.menu div a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+    }
+
