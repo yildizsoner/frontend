@@ -2,6 +2,9 @@
 1. COMMON
 2. BANNER
 */
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
     margin:0;
@@ -265,17 +268,80 @@ label[for="chkMenu"]{
 main > section {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 @media screen and (min-width: 1200px) {
     main > section {
         flex-direction: row;
     }
+    main > section.reverse {
+        flex-direction: row-reverse;
+    }
 }
 main > section > div{
     flex:1 0 50%;
 }
+main > section > div:last-child{
+    padding: 30px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (min-width: 700px) {
+    main > section > div:last-child{
+        padding: 50px 20%;
+    }  
+}
+@media screen and (min-width: 1200px) {
+    main > section > div:last-child{
+        padding: 50px 150px 50px 70px;
+        align-items: flex-start;
+    }  
+}
+main > section h2{
+    font-size: 2.2rem;
+}
+@media screen and (min-width: 800px) {
+    main > section h2{
+        font-size: 2.8rem;
+    }
+     
+}
+main > section p{
+    line-height: 25px;
+}
+main > section button{
+    background: none;
+    border:2px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+}
+@media screen and (min-width: 1200px) {
+    main > section button{
+        width: 70%;
+    }  
+}
 main img{
     object-fit: cover;
     width:100%;
-    height: 70%;
+    height:500px;
 }
+@media screen and (min-width: 1200px) {
+    main img{
+        height: 100vh;
+    }
+}
+/*travel*/
+
+main > section.travel > div {
+    position: absolute;
+    
+}
+
