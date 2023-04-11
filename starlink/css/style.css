@@ -338,10 +338,74 @@ main img{
         height: 100vh;
     }
 }
-/*travel*/
-
+/* TRAVEL */
 main > section.travel > div {
     position: absolute;
-    
 }
-
+@media screen and (min-width: 960px) {
+    main > section.travel > div {
+        top:50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+}
+@media screen and (min-width: 1200px) {
+    main > section.travel > div {
+        left:50px;   
+        width:50%;
+    }
+}
+main > section.travel > img{
+    height: 100vh;
+}
+main > section .buttons{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap:10px;
+}
+main > section .buttons button{
+    flex:1;
+}
+@media screen and (min-width: 1200px) {
+    main > section .buttons{
+        flex-direction: row;
+    }
+}
+main >section.testimonals{
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(32, 32, 32);
+    padding:20px;
+    line-height: 25px;
+}
+@media screen and (min-width: 800px) {
+    main >section.testimonals{
+        padding: 10%;
+    }
+}
+main >section.testimonals ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    font-size: 1.3rem;
+}
+@media screen and (min-width: 960px) {
+    main >section.testimonals ul{
+        flex-direction: row;
+    }
+}
+/* SPACER */
+section.line-spacer span{
+    display: block;
+    height: 250px;
+    width:1px;
+    background-color: white;
+    margin:30px auto;
+}
